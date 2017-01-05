@@ -9,6 +9,7 @@ while true
         puts "NO NOT SINCE " + year.to_s + '!'
       end
       if input == 'BYE'
+        puts "AS A MEMBER OF THE GREEK COMMUNITY"
         counter = counter + 1
       else
         counter = 0
