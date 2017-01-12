@@ -1,7 +1,7 @@
 def rando array
 lst = []
-  while array.length != 0
-    rand_index = rand(0..array.length)
+  while array.length > 0
+    rand_index = rand(array.length)
     index = 0
     rand_array = []
     array.each do |object|
@@ -10,11 +10,12 @@ lst = []
         else
           lst << object
       end
-    index += 1
+    index = index + 1
   end
-      array = rand_array + lst
+      array = rand_array
     end
+  lst
 end
 
-input = [1,2,3,4,5,6]
-puts (rando(input))
+input = [1,2,3,4,5]
+puts rando input

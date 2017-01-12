@@ -78,7 +78,7 @@ left = 0
   if write > 0
     num_string = num_string + ones_place[write-1]
   end
-num_string
+num_string.capitalize
 end
 
 str = " bottles of beer on the wall"
